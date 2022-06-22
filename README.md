@@ -3,7 +3,7 @@ Fluent-bit image that extracts docker container logs
 
 ## Test
 
-> NOT TO use `stdout` OUTPUT, or will lead to dead loop
+> DON'T use stdout OUTPUT, otherwise it will cause an infinite loop.
 
 ```sh
 docker run --rm \
